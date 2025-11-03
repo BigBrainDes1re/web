@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Навигация -->
+    <nav class="container-big">
+      <ul id="ul-nav">
+        <li class="container-nav">
+          <a href="#personal-info">Личные данные</a>
+        </li>
+        <li class="container-nav"><a href="#education">Образование</a></li>
+        <li class="container-nav">
+          <a href="#work-experience">Опыт работы</a>
+        </li>
+        <li class="container-nav"><a href="#skills">Навыки</a></li>
+        <li class="container-nav"><a href="#projects">Проекты</a></li>
+        <li class="container-nav">
+          <a href="#additional-info">Дополнительная информация</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Имя фамилия -->
+    <header class="container-big">
+      <div class="container">
+        <h1>Иван Морозов</h1>
+        <p>
+          Начинающий <strong>frontend</strong> разработчик на html + css. Готов
+          взяться за проект <em>любой сложности</em>, чтобы набраться опыта и
+          собрать портфолио
+        </p>
+      </div>
+    </header>
+
+    <!-- Основная информация -->
+    <main class="container-big">
+      <div>
+        <!-- Личная информация -->
+        <section id="personal-info" class="container">
+          <h3>Личная информация</h3>
+          <p>
+            Дата рождения: 20.01.2007 <br />
+            Город проживания: Москва
+          </p>
+          <p>Контактная информация:</p>
+          <ul id="#contact-info">
+            <li>Телефон: +7 (916) 980-38-08</li>
+            <li>Email: ivan-morozov-07@mail.ru</li>
+            <li>
+              <a href="https://t.me/its8am" target="_blank">Telegram</a>
+            </li>
+            <li><a href="https://vk.com/bbatonn" target="_blank">VK</a></li>
+            <li>
+              <a href="https://www.instagram.com/ivan_frosty/" target="_blank"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/BigBrainDes1re" target="_blank"
+                >GibHub
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Образование -->
+        <section id="education" class="container">
+          <h3>Образование</h3>
+          <p>
+            Высшее учебное заведение: <strong>НИУ ВШЭ</strong><br />
+            Период обучения: 4 года<br />
+            Направление: Программная инженерия
+          </p>
+        </section>
+      </div>
+
+      <div>
+        <!-- Опыт работы -->
+        <section id="work-experience" class="container">
+          <h3>Опыт работы</h3>
+          <p>
+            Компания: <strong>Яндекс</strong><br />
+            Должность: <em>доставщик еды</em><br />
+            Обязанности:
+          </p>
+          <ol>
+            <li>Забирать заказы у ресторанов</li>
+            <li>Доставлять еду клиентам</li>
+            <li>Проходить проверки качества</li>
+          </ol>
+        </section>
+
+        <!-- Навыки -->
+        <section id="skills" class="container">
+          <h3>Навыки</h3>
+          <ul>
+            <li>Базы данных</li>
+            <ul>
+              <li>SQL</li>
+              <li>PostgreSQL</li>
+            </ul>
+            <li>Фреймворки</li>
+            <ul>
+              <li>Django</li>
+              <li>React</li>
+            </ul>
+            <li>Языки программирования</li>
+            <ul>
+              <li>Python</li>
+              <li>JavaScript</li>
+              <li>C/C++</li>
+            </ul>
+            <li>Нахождение общего языка с коллегами</li>
+            <li>Знание английского языка</li>
+          </ul>
+        </section>
+
+        <!-- Проекты -->
+        <section id="projects" class="container">
+          <h3>Проекты</h3>
+          <a href="https://youtube.com">YouTube<br /></a>
+          <p>
+            Платформа, где пользователи могут публиковать видео, взамен получая
+            реакцию от других пользователей в виде лайков/дизлайков и
+            комментариев.
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <!-- Дополнительная информация -->
+    <aside id="additional-info" class="container-big">
+      <div class="container">
+        <h3>Дополнительная информация</h3>
+        <p>
+          Помимо программирования увлекаюсь автомобилями, игрой на гитаре. Люблю
+          разные виды спорта: футбол, баскетбол, волейбол, настольный теннис.
+          Хожу в тренажерный зал
+        </p>
+      </div>
+    </aside>
+
+    <!-- Обратная связь -->
+    <footer class="container-big">
+      <div class="container" style="width: auto">
+        <h3>Связь со мной</h3>
+        <form>
+          <p>Оставьте обратную связь, заполнив форму:</p>
+          <label for="name">Имя:</label>
+          <input type="text" name="name" id="name" required />
+          <br />
+          <label for="email">Почта:</label>
+          <input type="text" name="name" id="email" required />
+          <br />
+          <label for="job-title">Желаемая должность:</label>
+          <select name="job-title" id="job-title">
+            <option value="cleaner">Уборщик</option>
+            <option value="gamedev">Разработчик игр</option>
+            <option value="frontend">frontend разработчик</option>
+            <option value="backend">backend разработчик</option>
+            <option value="fullstack">fullstack разработчик</option>
+          </select>
+          <br />
+          <label for="sms">Сообщение:</label>
+          <textarea name="sms" id="sms" required></textarea>
+          <br />
+          <input type="checkbox" name="agree" id="agree" />
+          <label for="agree">Я согласен с обработкой персональных данных</label>
+          <br />
+          <button>Отправить</button>
+        </form>
+
+        <p>
+          Или пишите на почту: ivan-morozov-07@mail.ru<br />
+          Звоните по номеру: +7 (916) 980-38-08
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
